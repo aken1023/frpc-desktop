@@ -17,31 +17,31 @@ const routes = ref<Array<RouteRecordRaw>>([]);
 const guideSteps = ref({
   Home: {
     step: "1",
-    intro: "此功能用于控制frpc的连接状态，您可以轻松地断开或重新连接。"
+    intro: "此功能用於控制frpc的連接狀態，您可以輕鬆地斷開或重新連接。"
   },
   Proxy: {
     step: "2",
     intro:
-      "在这里，您可以方便地配置和管理代理设置。无论是添加、修改还是删除代理，您都可以轻松完成。"
+      "在這裡，您可以方便地配置和管理代理設置。無論是添加、修改還是刪除代理，您都可以輕鬆完成。"
   },
   Download: {
     step: "3",
-    intro: "通过此功能，您可以快速下载最新版本的frp。"
+    intro: "透過此功能，您可以快速下載最新版本的frp。"
   },
   Config: {
     step: "4",
     intro:
-      "此功能允许您设置软件的各种配置选项，包括连接方式等。根据您的需求进行个性化设置，以优化使用体验。"
+      "此功能允許您設置軟體的各種配置選項，包括連接方式等。根據您的需求進行個性化設置，以優化使用體驗。"
   },
   Logger: {
     step: "5",
     intro:
-      "在日志查看功能中，您可以实时查看FRP连接的日志信息。这有助于您监控连接状态，及时排查可能出现的问题。"
+      "在日誌查看功能中，您可以即時查看FRP連接的日誌資訊。這有助於您監控連接狀態，及時排查可能出現的問題。"
   },
   Version: {
     step: "6",
     intro:
-      "通过此功能，您可以查看当前安装的Frpc-Desktop版本，并检查是否有可用更新。"
+      "透過此功能，您可以查看當前安裝的Frpc-Desktop版本，並檢查是否有可用更新。"
   }
 });
 const currentRoute = computed(() => {
@@ -49,8 +49,8 @@ const currentRoute = computed(() => {
 });
 
 /**
- * 菜单切换
- * @param mi 菜单索引
+ * 菜單切換
+ * @param mi 菜單索引
  */
 const handleMenuChange = (route: any) => {
   if (currentRoute.value.name === route.name) {
@@ -69,7 +69,7 @@ const handleOpenGitHubReleases = () => {
 };
 
 const handleCompleteGuide: () => boolean = () => {
-  // 礼花
+  // 禮花
   confetti({
     zIndex: 12002,
     particleCount: 200,
@@ -77,7 +77,7 @@ const handleCompleteGuide: () => boolean = () => {
     origin: { y: 0.6 }
   });
   localStorage.setItem("guide", new Date().getTime().toString());
-  return true; // 确保返回 boolean
+  return true; // 確保返回 boolean
 };
 
 onMounted(() => {
@@ -86,7 +86,7 @@ onMounted(() => {
   ) as Array<RouteRecordRaw>;
 
   if (!localStorage.getItem("guide")) {
-    // 开始
+    // 開始
     Intro.onBeforeExit(handleCompleteGuide).start();
   }
 });

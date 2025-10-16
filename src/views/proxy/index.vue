@@ -319,7 +319,7 @@ const handleSubmit = async () => {
         if (lc !== rc) {
           ElMessage({
             type: "warning",
-            message: "请确保内网端口和外网端口数量一致"
+            message: "請確保內網端口和外網端口數量一致"
           });
           return;
         }
@@ -717,7 +717,7 @@ onUnmounted(() => {
                     proxy.visitorsModel !== 'visitors'
                   "
                 >
-                  <span>内网地址：</span>
+                  <span>內網地址：</span>
                   <span class="font-bold text-primary">{{
                     proxy.localIP
                   }}</span>
@@ -725,7 +725,7 @@ onUnmounted(() => {
                 -->
                   <!--
                 <div class="text-[12px]" v-if="proxy.type === 'tcp'">
-                  <span>外网端口：</span>
+                  <span>外網端口：</span>
                   <span class="font-bold text-primary">{{
                     proxy.remotePort
                   }}</span>
@@ -827,7 +827,7 @@ onUnmounted(() => {
                     proxy.visitorsModel === 'visitors'
                   "
                 >
-                  <span>绑定端口：</span>
+                  <span>綁定端口：</span>
                   <span class="font-bold text-primary">{{
                     proxy.bindPort
                   }}</span>

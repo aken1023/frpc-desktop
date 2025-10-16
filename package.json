@@ -2,7 +2,7 @@
   "name": "Frpc-Desktop",
   "version": "1.2.3",
   "main": "dist-electron/main/index.js",
-  "description": "FRP跨平台桌面客户端，可视化配置，轻松实现内网穿透！",
+  "description": "FRP跨平臺桌面客戶端，視覺化配置，輕鬆實現內網穿透！",
   "repository": "github:luckjiawei/frpc-desktop",
   "author": "刘嘉伟 <8473136@qq.com>",
   "license": "MIT",

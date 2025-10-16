@@ -826,7 +826,7 @@ onUnmounted(() => {
                 <template #label>
                   <div class="flex items-center mr-1 h-full">
                     <el-popover placement="top" trigger="hover">
-                      <template #default> 是否开启多用户模式 </template>
+                      <template #default> 是否開啟多用戶模式 </template>
                       <template #reference>
                         <IconifyIconOffline
                           class="text-base"
@@ -1683,7 +1683,7 @@ onUnmounted(() => {
                   v-model="formData.system.language"
                   @change="handleSystemLanguageChange"
                 >
-                  <el-option label="中文" value="zh-CN" />
+                  <el-option label="繁體中文" value="zh-CN" />
                   <el-option label="English" value="en-US" />
                 </el-select>
               </el-form-item>

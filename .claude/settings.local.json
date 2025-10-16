@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "Bash(npm run electron:*)",
+      "Bash(npm run:*)",
+      "Bash(npx electron:*)",
+      "Bash(npm install)",
+      "Bash(node_modules\\\\.bin\\\\electron.cmd:*)"
+    ],
+    "defaultMode": "acceptEdits"
+  }
+}

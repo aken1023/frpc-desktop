@@ -151,8 +151,8 @@ onMounted(() => {
 
 const handleImportFrp = () => {
   ElMessageBox.alert(
-    '仅支持导入版本 > <span class="font-bold text-primary">v0.52.0</span> <= <span class="font-bold text-primary">v0.64.0</span><div class="font-bold text-primary">导入文件不要解压！！！',
-    "导入提示",
+    '僅支援導入版本 > <span class="font-bold text-primary">v0.52.0</span> <= <span class="font-bold text-primary">v0.64.0</span><div class="font-bold text-primary">導入檔案不要解壓！！！',
+    "導入提示",
     {
       confirmButtonText: "知道了",
       dangerouslyUseHTMLString: true
